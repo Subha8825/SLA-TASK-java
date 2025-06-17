@@ -1,17 +1,30 @@
-import java.util.*;
-class Number {
-    public static void main(String[] args) {
-        Scanner obj=new Scanner(System.in);
-         System.out.println("ENTER THE NUM");
-        int a=obj.nextInt();
-        int b=obj.nextInt();
-        int num=a%100;
-        int num1=b%100;
-        if(num==num1){
-          System.out.println("Same Number");   
-        }
-        else{
-        System.out.println("Not a same num");
-        }
-    }
+package com.index;
+
+public class Number {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num=2468;
+		int temp=num;
+		String res="";
+		while(temp>0) {
+			int n=temp%10;
+			if(n==2) {
+				res="Two "+res;
+			}
+			else if(n==4) {
+				res="Four "+res;
+			}
+			else if(n==6) {
+				res="Six "+res;
+				
+			}
+			else if(n==8) {
+				res="Eight "+res;
+			}
+			temp/=10;
+		}
+		System.out.println(res);
+	}
+
 }
